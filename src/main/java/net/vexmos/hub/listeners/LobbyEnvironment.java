@@ -37,7 +37,7 @@ public class LobbyEnvironment implements Listener {
         Player player = event.getPlayer();
         String playerName = player.getName();
         database.registerFirstLogin(playerName);
-        openScore(player);
+        //openScore(player);
     }
 
 
@@ -159,57 +159,55 @@ public class LobbyEnvironment implements Listener {
         String cristais = String.valueOf(database.getCristais(player.getName()));
         String serverName = Bukkit.getServerName().replaceAll("Lobby", "").trim();
 
-        ScoreboardWrapper sc_wrapper = new ScoreboardWrapper(" §6§lVEXMOS ");
+        ScoreboardWrapper sc_wrapper = new ScoreboardWrapper(" §a§lVEXMOS ");
         sc_wrapper.addBlankSpace();
 
         if (group != null) {
             switch (group) {
                 case "diretor":
-                    sc_wrapper.addLine(" Grupo: §4DIRETOR");
+                    sc_wrapper.addLine(" Grupo: §4Diretor");
                     break;
                 case "dev":
-                    sc_wrapper.addLine(" Grupo: §3DESENVOLVEDOR");
+                    sc_wrapper.addLine(" Grupo: §3Desenvolvedor");
                     break;
                 case "admin":
-                    sc_wrapper.addLine(" Grupo: §cADMINISTRADOR");
+                    sc_wrapper.addLine(" Grupo: §cAdministrador");
                     break;
                 case "mod":
-                    sc_wrapper.addLine(" Grupo: §2MODERADOR");
+                    sc_wrapper.addLine(" Grupo: §2Moderador");
                     break;
                 case "construtor":
-                    sc_wrapper.addLine(" Grupo: §eCONSTRUTOR");
+                    sc_wrapper.addLine(" Grupo: §eConstrutor");
                     break;
                 case "suporte":
-                    sc_wrapper.addLine(" Grupo: §3SUPORTE");
+                    sc_wrapper.addLine(" Grupo: §3Suporte");
                     break;
                 case "emerald":
-                    sc_wrapper.addLine(" Grupo: §aEMERALD");
+                    sc_wrapper.addLine(" Grupo: §aEmerald");
                     break;
                 case "diamond":
-                    sc_wrapper.addLine(" Grupo: §bDIAMOND");
+                    sc_wrapper.addLine(" Grupo: §bDiamond");
                     break;
                 case "gold":
-                    sc_wrapper.addLine(" Grupo: §6GOLD");
+                    sc_wrapper.addLine(" Grupo: §6Gold");
                     break;
                 case "membro":
-                    sc_wrapper.addLine(" Grupo: §7MEMBRO");
+                    sc_wrapper.addLine(" Grupo: §7Membro");
                     break;
                 default:
-                    sc_wrapper.addLine(" Grupo: §7MEMBRO");
+                    sc_wrapper.addLine(" Grupo: §7default");
                     break;
             }
         } else {
-            sc_wrapper.addLine(" Grupo: §7MEMBRO");
+            sc_wrapper.addLine(" Grupo: §7Membro");
         }
 
-        sc_wrapper.addBlankSpace();
-        sc_wrapper.addLine(" §6§lⓋ§fCristais: §B" + cristais);
+        sc_wrapper.addLine(" §fCristais: §b" + cristais);
         sc_wrapper.addBlankSpace();
         sc_wrapper.addLine(" §fLobby: §e#" + serverName);
+        sc_wrapper.addLine(" §fJogadores: §b" + players);
         sc_wrapper.addBlankSpace();
-        sc_wrapper.addLine(" §fJogadores: §B" + players);
-        sc_wrapper.addBlankSpace();
-        sc_wrapper.addLine("§6www.vexmos.net");
+        sc_wrapper.addLine("§awww.vexmos.net");
 
         player.setScoreboard(sc_wrapper.getScoreboard());
     }
