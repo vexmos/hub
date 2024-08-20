@@ -4,70 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aaad820-f693-4efd-812e-f0635635a00e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/scoreboard/common/EntryBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/scoreboard/common/Strings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/scoreboard/common/animate/AnimatableString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/scoreboard/common/animate/FrameAnimatedString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/scoreboard/common/animate/HighlightedString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/scoreboard/common/animate/ScrollableString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/scoreboard/common/animate/StaticString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/scoreboard/setupScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/scoreboard/type/Entry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/scoreboard/type/Scoreboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/scoreboard/type/ScoreboardHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/scoreboard/type/SimpleScoreboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/ItemFramesListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/ScoreboardListener.java" afterDir="false" />
+    <list default="true" id="0aaad820-f693-4efd-812e-f0635635a00e" name="Changes" comment="a lot of things">
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/VexmosHub.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/VexmosHub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/CustomHeads.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/CustomHeads.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/GuiAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/GuiAPI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/ItemAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/ItemAPI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/LinkWithSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/LinkWithSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/ScoreboardWrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/ScoreboardWrapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/SpigotConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/SpigotConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/ScoreboardWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/scoreboard/type/Scoreboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/scoreboard/type/Scoreboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/scoreboard/type/SimpleScoreboard$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/scoreboard/type/SimpleScoreboard$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/scoreboard/type/SimpleScoreboard$FakePlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/scoreboard/type/SimpleScoreboard$FakePlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/scoreboard/type/SimpleScoreboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/api/scoreboard/type/SimpleScoreboard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/database/ConnectSpigot.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/database/ConnectSpigot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/database/SetupConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/database/SetupConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/FlyListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/FlyListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/Listeners.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/Listeners.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/LobbyEnvironment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/LobbyEnvironment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/ManagementListeners.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/ManagementListeners.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/AjustesGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/AjustesGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/CollectablesGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/CollectablesGUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/CollectablesGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/CollectablesGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/HatsGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/HatsGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/LobbiesGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/LobbiesGUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/LobbiesGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/LobbiesGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/ProfileGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/ProfileGUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/ProfileGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/ProfileGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/ServerSelectorGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/ServerSelectorGUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/ServerSelectorGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/ServerSelectorGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/SkinGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/SkinGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/TagGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/gui/TagGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/systems/JoinMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/systems/JoinMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/systems/PlayerVisible.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/systems/PlayerVisible.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/ScoreboardListener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/ScoreboardListener$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/ScoreboardListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/hub/listeners/ScoreboardListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/VexmosHub.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/VexmosHub.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Listeners.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/LobbyEnvironment.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ScoreboardListener$1.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ScoreboardListener.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/VexmosHub.class.uniqueId0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/VexmosHub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/VexmosHub.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/LinkWithSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/LinkWithSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/ScoreboardWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/scoreboard/type/Scoreboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/scoreboard/type/Scoreboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/scoreboard/type/SimpleScoreboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/scoreboard/type/SimpleScoreboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/database/ConnectSpigot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/database/ConnectSpigot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/Listeners.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/LobbyEnvironment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/LobbyEnvironment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/ScoreboardListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/ScoreboardListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,8 +177,17 @@
       <workItem from="1724106877245" duration="3000" />
       <workItem from="1724116662300" duration="4661000" />
       <workItem from="1724121452057" duration="5691000" />
-      <workItem from="1724128745194" duration="321000" />
+      <workItem from="1724128745194" duration="6216000" />
     </task>
+    <task id="LOCAL-00001" summary="a lot of things">
+      <option name="closed" value="true" />
+      <created>1724129088716</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724129088716</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,5 +206,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="a lot of things" />
+    <option name="LAST_COMMIT_MESSAGE" value="a lot of things" />
   </component>
 </project>

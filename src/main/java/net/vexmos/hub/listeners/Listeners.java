@@ -32,6 +32,7 @@ public class Listeners extends JavaPlugin implements Listener {
         LinkWithSystem linkWithSystem = new LinkWithSystem();
         ConnectSpigot database = new ConnectSpigot();
         LobbyEnvironment lobbyEnvironment = new LobbyEnvironment(linkWithSystem, database);
+        new ScoreboardListener();
         VexmosHub.get().getServer().getPluginManager().registerEvents(new LobbyEnvironment(linkWithSystem, database), VexmosHub.get());
 
 

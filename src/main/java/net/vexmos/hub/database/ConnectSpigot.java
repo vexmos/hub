@@ -38,7 +38,7 @@ public class ConnectSpigot {
             try {
                 connection = DriverManager.getConnection(
                         "jdbc:mysql://" + host + ":" + port + "/" + database, username, password);
-                System.out.println("MySQL conectado com sucesso!");
+                //System.out.println("MySQL conectado com sucesso!");
             } catch (SQLException e) {
                 e.printStackTrace();
             }

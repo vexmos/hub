@@ -2,7 +2,6 @@ package net.vexmos.hub;
 
 import net.vexmos.hub.api.scoreboard.setupScore;
 import net.vexmos.hub.listeners.Listeners;
-import net.vexmos.hub.listeners.LobbyEnvironment;
 import net.vexmos.hub.listeners.ScoreboardListener;
 import org.bukkit.plugin.java.JavaPlugin;
 

@@ -1,17 +1,7 @@
 package net.vexmos.hub.listeners;
 
-import net.vexmos.hub.VexmosHub;
 import net.vexmos.hub.api.ItemAPI;
 import net.vexmos.hub.api.LinkWithSystem;
-import net.vexmos.hub.api.ScoreboardWrapper;
-import net.vexmos.hub.api.scoreboard.common.EntryBuilder;
-import net.vexmos.hub.api.scoreboard.common.Strings;
-import net.vexmos.hub.api.scoreboard.common.animate.HighlightedString;
-import net.vexmos.hub.api.scoreboard.common.animate.ScrollableString;
-import net.vexmos.hub.api.scoreboard.setupScore;
-import net.vexmos.hub.api.scoreboard.type.Entry;
-import net.vexmos.hub.api.scoreboard.type.Scoreboard;
-import net.vexmos.hub.api.scoreboard.type.ScoreboardHandler;
 import net.vexmos.hub.database.ConnectSpigot;
 import org.bukkit.*;
 import org.bukkit.enchantments.Enchantment;

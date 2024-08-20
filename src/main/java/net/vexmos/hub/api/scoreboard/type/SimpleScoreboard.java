@@ -22,8 +22,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class SimpleScoreboard implements Scoreboard {
 
-    private static final String TEAM_PREFIX = "S";
-    private int TEAM_COUNTER = 0;
+    private static final String TEAM_PREFIX = "Scoreboard_";
+    private static int TEAM_COUNTER = 0;
 
     private final org.bukkit.scoreboard.Scoreboard scoreboard;
     private final Objective objective;
@@ -37,6 +37,7 @@ public class SimpleScoreboard implements Scoreboard {
     private Table<String, Integer, FakePlayer> playerCache = HashBasedTable.create();
     private Table<Team, String, String> teamCache = HashBasedTable.create();
     private BukkitRunnable updateTask;
+    private boolean async = false;
 
     public SimpleScoreboard(Player holder) {
         this.holder = holder;
@@ -60,6 +61,12 @@ public class SimpleScoreboard implements Scoreboard {
                 update();
             }
         };
+        // Check if the task should be run asynchronously
+        if (this.async) {
+            updateTask.runTaskTimerAsynchronously(VexmosHub.get().get(), 0, updateInterval);
+            return;
+        }
+        // Otherwise, run it normally
         updateTask.runTaskTimer(VexmosHub.get(), 0, updateInterval);
     }
 
@@ -112,6 +119,28 @@ public class SimpleScoreboard implements Scoreboard {
     @Override
     public Player getHolder() {
         return holder;
+    }
+
+    /**
+     * Check if the scoreboard update task is async
+     *
+     * @return If the task should be async
+     */
+    @Override
+    public boolean isAsync() {
+        return this.async;
+    }
+
+    /**
+     * Update the async option
+     *
+     * @param value If the async option is enabled
+     * @return The updated value
+     */
+    @Override
+    public Scoreboard setAsync(boolean value) {
+        this.async = value;
+        return this;
     }
 
     @SuppressWarnings("deprecation")
@@ -270,8 +299,7 @@ public class SimpleScoreboard implements Scoreboard {
         }
 
         @Override
-        public void setBanned(boolean b) {
-
+        public void setBanned(boolean banned) {
         }
 
         @Override

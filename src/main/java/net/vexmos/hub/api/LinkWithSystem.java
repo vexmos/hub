@@ -1,7 +1,6 @@
 package net.vexmos.hub.api;
 
 import net.vexmos.hub.listeners.gui.AjustesGUI;
-import net.vexmos.spigot.VexmosNET;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
