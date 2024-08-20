@@ -10,12 +10,12 @@ import net.vexmos.hub.api.scoreboard.type.Entry;
 import net.vexmos.hub.api.scoreboard.type.Scoreboard;
 import net.vexmos.hub.api.scoreboard.type.ScoreboardHandler;
 import net.vexmos.hub.database.ConnectSpigot;
-import net.vexmos.spigot.VexmosNET;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.scheduler.BukkitRunnable;
 
@@ -29,6 +29,7 @@ public class ScoreboardListener implements Listener {
         Bukkit.getPluginManager().registerEvents(this, Bukkit.getPluginManager().getPlugin("VexmosHub"));
     }
 
+
     @EventHandler
     public void onQuit(PlayerQuitEvent e) {
         Player p = e.getPlayer();
@@ -38,8 +39,12 @@ public class ScoreboardListener implements Listener {
 
     @EventHandler
     public void onJoin(PlayerJoinEvent e) {
+        Player p = e.getPlayer();
         scoreUpdate();
     }
+
+
+
 
 
 
@@ -63,21 +68,31 @@ public class ScoreboardListener implements Listener {
     }
 
 
+    public static String formatCrystals(int crystals) {
+        if (crystals < 1000) {
+            return String.valueOf(crystals);
+        } else if (crystals < 100000) {
+            return (crystals / 1000) + "," + (crystals % 1000 / 100) + "k";
+        } else if (crystals < 1000000) {
+            return (crystals / 1000) + "k";
+        } else {
+            return (crystals / 1000000) + "kk";
+        }
+    }
+
+
+
     public void scoreUpdate() {
         for (Player player : Bukkit.getOnlinePlayers()) {
             if (player.isOnline()) {
                 ConnectSpigot db = new ConnectSpigot();
                 setupScore setupScore = new setupScore();
-                String cristais = String.valueOf(db.getCristais(player.getName()));
-                String group = db.getPlayerGroup(player.getName());
-                String servername = Bukkit.getServer().getName().replace("Lobby", "").trim();
-                String players = String.valueOf(Bukkit.getOnlinePlayers().size());
 
                 Scoreboard scoreboard = setupScore.createScoreboard(player)
                         .setHandler(new ScoreboardHandler() {
 
                             private final ScrollableString scroll = new ScrollableString(Strings.format("VEXMOS"), 13, 0);
-                            private final HighlightedString highlighted = new HighlightedString("VEXMOS", "&6&l", "&e&l");
+                            private final HighlightedString highlighted = new HighlightedString("www.vexmos.net", "&6", "&e");
 
                             @Override
                             public String getTitle(Player player) {
@@ -86,21 +101,26 @@ public class ScoreboardListener implements Listener {
 
                             @Override
                             public List<Entry> getEntries(Player player) {
+                                int cristais = db.getCristais(player.getName());
+                                String group = db.getPlayerGroup(player.getName());
+                                String servername = Bukkit.getServer().getName().replace("Lobby", "").trim();
+                                String players = String.valueOf(Bukkit.getOnlinePlayers().size());
                                 return new EntryBuilder()
 
                                         .next("&8" + getCurrentDateString())
                                         .blank()
                                         .next(" &fGrupo: " + replaceGroupNames(group))
-                                        .next(" &fCristais: &b" + cristais)
+                                        .next(" &fCristais: &b" + formatCrystals(cristais))
                                         .blank()
                                         .next(" &fLobby: &e#1")
                                         .next(" &fJogadores: &b" + players)
                                         .blank()
-                                        .next("&6www.vexmos.net")
+                                        .next(highlighted.next())
                                         .build();
                             }
                         })
-                        .setUpdateInterval(11L);
+                        .setAsync(true);
+
                 scoreboard.activate();
 
             }

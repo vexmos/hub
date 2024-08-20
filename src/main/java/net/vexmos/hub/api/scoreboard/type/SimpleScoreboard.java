@@ -14,10 +14,7 @@ import org.bukkit.scoreboard.DisplaySlot;
 import org.bukkit.scoreboard.Objective;
 import org.bukkit.scoreboard.Team;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class SimpleScoreboard implements Scoreboard {
@@ -33,9 +30,9 @@ public class SimpleScoreboard implements Scoreboard {
 
     private boolean activated;
     private ScoreboardHandler handler;
-    private Map<FakePlayer, Integer> entryCache = new ConcurrentHashMap<>();
-    private Table<String, Integer, FakePlayer> playerCache = HashBasedTable.create();
-    private Table<Team, String, String> teamCache = HashBasedTable.create();
+    private final Map<FakePlayer, Integer> entryCache = new ConcurrentHashMap<>();
+    private final Table<String, Integer, FakePlayer> playerCache = HashBasedTable.create();
+    private final Table<Team, String, String> teamCache = HashBasedTable.create();
     private BukkitRunnable updateTask;
     private boolean async = false;
 
@@ -63,7 +60,7 @@ public class SimpleScoreboard implements Scoreboard {
         };
         // Check if the task should be run asynchronously
         if (this.async) {
-            updateTask.runTaskTimerAsynchronously(VexmosHub.get().get(), 0, updateInterval);
+            updateTask.runTaskTimerAsynchronously(VexmosHub.get(), 0, updateInterval);
             return;
         }
         // Otherwise, run it normally
