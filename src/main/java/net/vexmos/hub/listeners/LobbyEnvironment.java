@@ -4,6 +4,14 @@ import net.vexmos.hub.VexmosHub;
 import net.vexmos.hub.api.ItemAPI;
 import net.vexmos.hub.api.LinkWithSystem;
 import net.vexmos.hub.api.ScoreboardWrapper;
+import net.vexmos.hub.api.scoreboard.common.EntryBuilder;
+import net.vexmos.hub.api.scoreboard.common.Strings;
+import net.vexmos.hub.api.scoreboard.common.animate.HighlightedString;
+import net.vexmos.hub.api.scoreboard.common.animate.ScrollableString;
+import net.vexmos.hub.api.scoreboard.setupScore;
+import net.vexmos.hub.api.scoreboard.type.Entry;
+import net.vexmos.hub.api.scoreboard.type.Scoreboard;
+import net.vexmos.hub.api.scoreboard.type.ScoreboardHandler;
 import net.vexmos.hub.database.ConnectSpigot;
 import org.bukkit.*;
 import org.bukkit.enchantments.Enchantment;
@@ -19,6 +27,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.inventory.meta.SkullMeta;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class LobbyEnvironment implements Listener {
 
@@ -39,6 +48,8 @@ public class LobbyEnvironment implements Listener {
         database.registerFirstLogin(playerName);
         //openScore(player);
     }
+
+
 
 
     @EventHandler
@@ -153,83 +164,85 @@ public class LobbyEnvironment implements Listener {
         player.setHealth(4);
     }
 
-    public void openScore(Player player) {
-        String players = String.valueOf(Bukkit.getOnlinePlayers().size());
-        String group = database.getPlayerGroup(player.getName());
-        String cristais = String.valueOf(database.getCristais(player.getName()));
-        String serverName = Bukkit.getServerName().replaceAll("Lobby", "").trim();
-
-        ScoreboardWrapper sc_wrapper = new ScoreboardWrapper(" §a§lVEXMOS ");
-        sc_wrapper.addBlankSpace();
-
-        if (group != null) {
-            switch (group) {
-                case "diretor":
-                    sc_wrapper.addLine(" Grupo: §4Diretor");
-                    break;
-                case "dev":
-                    sc_wrapper.addLine(" Grupo: §3Desenvolvedor");
-                    break;
-                case "admin":
-                    sc_wrapper.addLine(" Grupo: §cAdministrador");
-                    break;
-                case "mod":
-                    sc_wrapper.addLine(" Grupo: §2Moderador");
-                    break;
-                case "construtor":
-                    sc_wrapper.addLine(" Grupo: §eConstrutor");
-                    break;
-                case "suporte":
-                    sc_wrapper.addLine(" Grupo: §3Suporte");
-                    break;
-                case "emerald":
-                    sc_wrapper.addLine(" Grupo: §aEmerald");
-                    break;
-                case "diamond":
-                    sc_wrapper.addLine(" Grupo: §bDiamond");
-                    break;
-                case "gold":
-                    sc_wrapper.addLine(" Grupo: §6Gold");
-                    break;
-                case "membro":
-                    sc_wrapper.addLine(" Grupo: §7Membro");
-                    break;
-                default:
-                    sc_wrapper.addLine(" Grupo: §7default");
-                    break;
-            }
-        } else {
-            sc_wrapper.addLine(" Grupo: §7Membro");
-        }
-
-        sc_wrapper.addLine(" §fCristais: §b" + cristais);
-        sc_wrapper.addBlankSpace();
-        sc_wrapper.addLine(" §fLobby: §e#" + serverName);
-        sc_wrapper.addLine(" §fJogadores: §b" + players);
-        sc_wrapper.addBlankSpace();
-        sc_wrapper.addLine("§awww.vexmos.net");
-
-        player.setScoreboard(sc_wrapper.getScoreboard());
-    }
 
 
-
-
-
-    public void startGlobalScoreboardUpdate() {
-
-        Bukkit.getScheduler().runTaskTimer(VexmosHub.get(), () -> {
-            for (Player player : Bukkit.getOnlinePlayers()) {
-                if (player.isOnline()) {
-
-
-                    openScore(player);
-
-
-                }
-            }
-        }, 40L, 80L);
-    }
+//    public void openScore(Player player) {
+//        String players = String.valueOf(Bukkit.getOnlinePlayers().size());
+//        String group = database.getPlayerGroup(player.getName());
+//        String cristais = String.valueOf(database.getCristais(player.getName()));
+//        String serverName = Bukkit.getServerName().replaceAll("Lobby", "").trim();
+//
+//        ScoreboardWrapper sc_wrapper = new ScoreboardWrapper(" §a§lVEXMOS ");
+//        sc_wrapper.addBlankSpace();
+//
+//        if (group != null) {
+//            switch (group) {
+//                case "diretor":
+//                    sc_wrapper.addLine(" Grupo: §4Diretor");
+//                    break;
+//                case "dev":
+//                    sc_wrapper.addLine(" Grupo: §3Desenvolvedor");
+//                    break;
+//                case "admin":
+//                    sc_wrapper.addLine(" Grupo: §cAdministrador");
+//                    break;
+//                case "mod":
+//                    sc_wrapper.addLine(" Grupo: §2Moderador");
+//                    break;
+//                case "construtor":
+//                    sc_wrapper.addLine(" Grupo: §eConstrutor");
+//                    break;
+//                case "suporte":
+//                    sc_wrapper.addLine(" Grupo: §3Suporte");
+//                    break;
+//                case "emerald":
+//                    sc_wrapper.addLine(" Grupo: §aEmerald");
+//                    break;
+//                case "diamond":
+//                    sc_wrapper.addLine(" Grupo: §bDiamond");
+//                    break;
+//                case "gold":
+//                    sc_wrapper.addLine(" Grupo: §6Gold");
+//                    break;
+//                case "membro":
+//                    sc_wrapper.addLine(" Grupo: §7Membro");
+//                    break;
+//                default:
+//                    sc_wrapper.addLine(" Grupo: §7default");
+//                    break;
+//            }
+//        } else {
+//            sc_wrapper.addLine(" Grupo: §7Membro");
+//        }
+//
+//        sc_wrapper.addLine(" §fCristais: §b" + cristais);
+//        sc_wrapper.addBlankSpace();
+//        sc_wrapper.addLine(" §fLobby: §e#" + serverName);
+//        sc_wrapper.addLine(" §fJogadores: §b" + players);
+//        sc_wrapper.addBlankSpace();
+//        sc_wrapper.addLine("§awww.vexmos.net");
+//
+//        player.setScoreboard(sc_wrapper.getScoreboard());
+//    }
+//
+//
+//
+//
+//
+//    public void startGlobalScoreboardUpdate() {
+//
+//        Bukkit.getScheduler().runTaskTimer(VexmosHub.get(), () -> {
+//            for (Player player : Bukkit.getOnlinePlayers()) {
+//                if (player.isOnline()) {
+//
+//
+//                    openScore(player);
+//
+//
+//                }
+//            }
+//        }, 40L, 80L);
+//    }
 
 
 

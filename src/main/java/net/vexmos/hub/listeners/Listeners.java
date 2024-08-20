@@ -26,15 +26,12 @@ public class Listeners extends JavaPlugin implements Listener {
         VexmosHub.get().getServer().getPluginManager().registerEvents(new LobbiesGUI(), VexmosHub.get());
         VexmosHub.get().getServer().getPluginManager().registerEvents(new HatsGUI(), VexmosHub.get());
         VexmosHub.get().getServer().getPluginManager().registerEvents(new AjustesGUI(), VexmosHub.get());
-
+        VexmosHub.get().getServer().getPluginManager().registerEvents(new ItemFramesListener(), VexmosHub.get());
         Random random = new Random();  // Cria uma instância de Random
         VexmosHub.get().getServer().getPluginManager().registerEvents(new JoinMessage(random), VexmosHub.get());
         LinkWithSystem linkWithSystem = new LinkWithSystem();
         ConnectSpigot database = new ConnectSpigot();
-
         LobbyEnvironment lobbyEnvironment = new LobbyEnvironment(linkWithSystem, database);
-
-        lobbyEnvironment.startGlobalScoreboardUpdate();
         VexmosHub.get().getServer().getPluginManager().registerEvents(new LobbyEnvironment(linkWithSystem, database), VexmosHub.get());
 
 
