@@ -28,6 +28,8 @@ public class Listeners extends JavaPlugin implements Listener {
         VexmosHub.get().getServer().getPluginManager().registerEvents(new AjustesGUI(), VexmosHub.get());
         VexmosHub.get().getServer().getPluginManager().registerEvents(new ItemFramesListener(), VexmosHub.get());
         VexmosHub.get().getServer().getPluginManager().registerEvents(new PortalListener(), VexmosHub.get());
+        VexmosHub.get().getServer().getPluginManager().registerEvents(new PetsGUI(), VexmosHub.get());
+        VexmosHub.get().getServer().getPluginManager().registerEvents(new LangGUI(), VexmosHub.get());
         Random random = new Random();  // Cria uma instância de Random
         VexmosHub.get().getServer().getPluginManager().registerEvents(new JoinMessage(random), VexmosHub.get());
         LinkWithSystem linkWithSystem = new LinkWithSystem();

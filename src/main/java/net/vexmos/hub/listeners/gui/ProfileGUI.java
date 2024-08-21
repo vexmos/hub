@@ -99,12 +99,25 @@ public class ProfileGUI implements Listener {
 
         itemClan.setItemMeta(clanCabeca);
 
+        String idiomaText = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY5MTk2YjMzMGM2Yjg5NjJmMjNhZDU2MjdmYjZlY2NlNDcyZWFmNWM5ZDQ0Zjc5MWY2NzA5YzdkMGY0ZGVjZSJ9fX0=";
+
+        // Create the custom head ItemStack
+        ItemStack cabecaIdioma = CustomHeads.create(idiomaText);
+        ItemStack itemIdioma = cabecaIdioma;
+        ItemMeta idiomaCabeca = itemIdioma.getItemMeta();
+        idiomaCabeca.setDisplayName("§eIdiomas");
+
+        idiomaCabeca.setLore(Arrays.asList("§aVer o catálogo de idiomas disponíveis.", "§8Esta função está em testes."));
+
+        itemIdioma.setItemMeta(idiomaCabeca);
+
 
 
 
 
         // Add items to the GUI
         gui.setItem(12, playerInfoItem);
+        gui.getInventory().setItem(47, itemIdioma);
         gui.getInventory().setItem(14, item);
         gui.getInventory().setItem(53, itemAvancar);
         gui.getInventory().setItem(49, itemClan);
@@ -208,6 +221,11 @@ public class ProfileGUI implements Listener {
                 e.setCancelled(true);
                 HatsGUI collect = new HatsGUI();
                 collect.openHatsMenu(player);
+            } else if (meta != null && meta.hasDisplayName() && meta.getDisplayName().equals("§eIdiomas") || meta.getDisplayName().equals(("§eLanguages"))) {
+                e.setCancelled(true);
+                LangGUI lang = new LangGUI();
+                lang.openLangGUI(player);
+
             } else if (meta != null && meta.hasDisplayName() && meta.getDisplayName().equals("§eVoltar §8[2/2]") || meta.getDisplayName().equals(("§eVoltar §8[1/1]"))) {
                 e.setCancelled(true);
                 if (e.getView().getTitle().equals("Seus Chapéus") || e.getView().getTitle().equals("Seus Efeitos") || e.getView().getTitle().equals("Seus Pets") ) {
@@ -222,6 +240,8 @@ public class ProfileGUI implements Listener {
 
             } else if (meta != null && meta.hasDisplayName() && meta.getDisplayName().equals("§ePets")){
                 e.setCancelled(true);
+                PetsGUI gui = new PetsGUI();
+                gui.openPetsMenu(player);
             } else if (meta != null && meta.hasDisplayName() && meta.getDisplayName().equals("§eEfeitos")){
                 e.setCancelled(true);
             } else if (meta != null && meta.hasDisplayName() && meta.getDisplayName().equals("§eAvançar §8[1/1]")){

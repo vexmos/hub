@@ -45,6 +45,35 @@ public class ConnectSpigot {
         }
     }
 
+    public void setPlayerLanguage(String playerName, String language) {
+        String query = "INSERT INTO languages (player_name, language) VALUES (?, ?) " +
+                "ON DUPLICATE KEY UPDATE language=?;";
+        try {
+            PreparedStatement statement = prepareStatement(query);
+            statement.setString(1, playerName);
+            statement.setString(2, language);
+            statement.setString(3, language);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public String getPlayerLanguage(String playerName) {
+        String query = "SELECT language FROM languages WHERE player_name=?";
+        try {
+            PreparedStatement statement = prepareStatement(query);
+            statement.setString(1, playerName);
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                return resultSet.getString("language");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return "pt_BR";  // Retorna "pt_BR" como padrão se não encontrar o idioma.
+    }
+
     public boolean isConnected() {
         try {
             return connection != null && !connection.isClosed();

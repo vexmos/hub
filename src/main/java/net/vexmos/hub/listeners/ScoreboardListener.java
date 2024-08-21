@@ -50,11 +50,11 @@ public class ScoreboardListener implements Listener {
 
 
     public static String getCurrentDateString() {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd"); // Define o formato da data
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy"); // Define o formato da data
         return sdf.format(new Date()); // Retorna a data atual formatada como uma string
     }
 
-    public static String replaceGroupNames(String input) {
+    public static String replaceGroupNamesptBR(String input) {
         return input
                 .replace("diretor", "&4&lDIRETOR")
                 .replace("admin", "&c&lADMIN")
@@ -65,6 +65,19 @@ public class ScoreboardListener implements Listener {
                 .replace("membro", "&7Membro")
                 .replace("diamond", "&b&lDIAMOND")
                 .replace("construtor", "&e&lCONSTRUTOR");
+    }
+
+    public static String replaceGroupNamesenUS(String input) {
+        return input
+                .replace("diretor", "&4&lDIRECTOR")
+                .replace("admin", "&c&lADMIN")
+                .replace("suporte", "&9&lSUPPORT")
+                .replace("mod", "&2&LMODERATOR")
+                .replace("emerald", "&a&lEMERALD")
+                .replace("gold", "&6&LGOLD")
+                .replace("membro", "&7MembER")
+                .replace("diamond", "&b&lDIAMOND")
+                .replace("construtor", "&e&lBUILDER");
     }
 
 
@@ -105,19 +118,38 @@ public class ScoreboardListener implements Listener {
                                 String group = db.getPlayerGroup(player.getName());
                                 String servername = Bukkit.getServer().getName().replace("Lobby", "").trim();
                                 String players = String.valueOf(Bukkit.getOnlinePlayers().size());
-                                return new EntryBuilder()
+                                if (db.getPlayerLanguage(player.getName()).equals("pt_BR")) {
+                                    return new EntryBuilder()
 
-                                        .next("&8" + getCurrentDateString())
-                                        .blank()
-                                        .next(" &fGrupo: " + replaceGroupNames(group))
-                                        .next(" &fCristais: &b" + formatCrystals(cristais))
-                                        .blank()
-                                        .next(" &fLobby: &e#1")
-                                        .next(" &fJogadores: &b" + players)
-                                        .blank()
-                                        .next(highlighted.next())
-                                        .build();
+                                            .next("&8" + getCurrentDateString())
+                                            .blank()
+                                            .next(" &fGrupo: " + replaceGroupNamesptBR(group))
+                                            .next(" &fCristais: &b" + formatCrystals(cristais))
+                                            .blank()
+                                            .next(" &fLobby: &e#1")
+                                            .next(" &fJogadores: &b" + players)
+                                            .blank()
+                                            .next(highlighted.next())
+                                            .build();
+                                } else if (db.getPlayerLanguage(player.getName()).equals("en_US")) {
+
+                                    return new EntryBuilder()
+
+                                            .next("&8" + getCurrentDateString())
+                                            .blank()
+                                            .next(" &fGroup: " + replaceGroupNamesenUS(group))
+                                            .next(" &fCrystals: &b" + formatCrystals(cristais))
+                                            .blank()
+                                            .next(" &fLobby: &e#1")
+                                            .next(" &fPlayers: &b" + players)
+                                            .blank()
+                                            .next(highlighted.next())
+                                            .build();
+                                }
+
+                                return java.util.Collections.emptyList();
                             }
+
                         })
                         .setAsync(true);
 
