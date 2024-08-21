@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="0aaad820-f693-4efd-812e-f0635635a00e" name="Changes" comment="score">
       <change afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/gui/LangGUI.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/gui/PetsGUI.java" afterDir="false" />
@@ -30,6 +31,85 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/Listeners.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/ScoreboardListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/ScoreboardListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/gui/ProfileGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/gui/ProfileGUI.java" afterDir="false" />
+=======
+    <list default="true" id="0aaad820-f693-4efd-812e-f0635635a00e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/VexmosHub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/api/CustomHeads.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/api/GuiAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/api/ItemAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/api/LinkWithSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/api/ScoreboardWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/api/SpigotConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/database/ConnectSpigot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/database/SetupConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/listeners/FlyListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/listeners/Listeners.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/listeners/LobbyEnvironment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/listeners/ManagementListeners.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/listeners/gui/AjustesGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/listeners/gui/CollectablesGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/listeners/gui/CollectablesGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/listeners/gui/HatsGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/listeners/gui/LobbiesGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/listeners/gui/LobbiesGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/listeners/gui/ProfileGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/listeners/gui/ProfileGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/listeners/gui/ServerSelectorGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/listeners/gui/ServerSelectorGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/listeners/gui/SkinGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/listeners/gui/TagGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/systems/JoinMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/vexmos/lobby/systems/PlayerVisible.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/VexmosHub.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/database.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/VexmosHub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/VexmosHub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/api/CustomHeads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/CustomHeads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/api/GuiAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/GuiAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/api/ItemAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/ItemAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/api/LinkWithSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/LinkWithSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/api/ScoreboardWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/ScoreboardWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/api/SpigotConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/api/SpigotConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/database/ConnectSpigot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/database/ConnectSpigot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/database/SetupConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/database/SetupConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/listeners/FlyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/FlyListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/listeners/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/Listeners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/listeners/LobbyEnvironment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/LobbyEnvironment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/listeners/ManagementListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/ManagementListeners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/listeners/gui/AjustesGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/gui/AjustesGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/listeners/gui/CollectablesGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/gui/CollectablesGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/listeners/gui/HatsGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/gui/HatsGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/listeners/gui/LobbiesGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/gui/LobbiesGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/listeners/gui/ProfileGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/gui/ProfileGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/listeners/gui/ServerSelectorGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/gui/ServerSelectorGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/listeners/gui/SkinGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/gui/SkinGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/listeners/gui/TagGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/listeners/gui/TagGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/systems/JoinMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/systems/JoinMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vexmos/lobby/systems/PlayerVisible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vexmos/hub/systems/PlayerVisible.java" afterDir="false" />
+>>>>>>> 8eb97429a1abe52224e9bc81017f46717a7589df
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +134,17 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="hub" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hub" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hub" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -61,39 +152,33 @@
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;nevesbr6&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "nevesbr6"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/vexmos/hub.git&quot;,
-    &quot;accountId&quot;: &quot;da00730d-583a-40db-b5a4-e7e2e13b4969&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/vexmos/hub.git",
+    "accountId": "508bbac7-1f62-40e8-8c93-0d76b4b56979"
   }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
   <component name="ProjectId" id="2ktInwzPTc5SJFmLEcW4MEfVVZf" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
@@ -112,8 +197,22 @@
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.hub [build].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/JOSE/Desktop/VEXMOS/github/hub/libs",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
+>>>>>>> 8eb97429a1abe52224e9bc81017f46717a7589df
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\JOSE\Desktop\VEXMOS\github\hub\libs" />
@@ -148,14 +247,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.300" />
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.300" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -164,6 +255,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724096616778</updated>
+<<<<<<< HEAD
       <workItem from="1724106877245" duration="3000" />
       <workItem from="1724116662300" duration="4661000" />
       <workItem from="1724121452057" duration="5691000" />
@@ -175,52 +267,12 @@
       <workItem from="1724211549944" duration="184000" />
       <workItem from="1724257036810" duration="1849000" />
       <workItem from="1724259025366" duration="1749000" />
+=======
+>>>>>>> 8eb97429a1abe52224e9bc81017f46717a7589df
     </task>
-    <task id="LOCAL-00001" summary="a lot of things">
-      <option name="closed" value="true" />
-      <created>1724129088716</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1724129088716</updated>
-    </task>
-    <task id="LOCAL-00002" summary="score">
-      <option name="closed" value="true" />
-      <created>1724184763275</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1724184763275</updated>
-    </task>
-    <task id="LOCAL-00003" summary="score">
-      <option name="closed" value="true" />
-      <created>1724185189688</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1724185189688</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="a lot of things" />
-    <MESSAGE value="score" />
-    <option name="LAST_COMMIT_MESSAGE" value="score" />
   </component>
 </project>
